@@ -3,15 +3,21 @@
 		<title>You Should...</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="/js/app.js"></script>
+		<link rel="stylesheet" href="/css/app.css">
 	</head>
 
 	<body>
 		<h1>You Should Read...</h1>
 		<ul id="books">
 		</ul>
+		
+		<div id="book-info"></div>
 
+		<div class="cf"></div>
+		
 		<h3>Add a book</h3>
-		Title: <input type="text" id="new-book-title" />
+		Title: <input type="text" id="new-book-title" /><br/>
+		Description: <textarea id="new-book-description"></textarea><br/>
 		<button id="add-book">Add Book</button>
 	</body>
 </html>

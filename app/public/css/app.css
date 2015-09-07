@@ -1,0 +1,8 @@
+ul#books {
+	float: left;
+	width: 400px;
+}
+
+.cf {
+	clear: both;
+}

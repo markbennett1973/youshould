@@ -12,13 +12,13 @@ router.post('/', function(req, res) {
     console.log(req.body);
     var book = new Book();      // create a new instance of the Book model
     book.name = req.body.name;  // set the books name (comes from the request)
+    book.description = req.body.description;
 
     // save the bear and check for errors
     book.save(function(err) {
         if (err)
             res.send(err);
 
-        console.log('created ' + book.id);
         res.json({ message: 'Book created!', id: book.id });
     });
     
